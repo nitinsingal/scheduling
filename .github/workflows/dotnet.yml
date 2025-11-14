@@ -25,4 +25,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal --parallel none
+      run: dotnet test Scheduling.Tests/Scheduling.Tests.csproj --filter "FullyQualifiedName~Scheduling.Tests" --verbosity normal -- --parallel none
