@@ -1,0 +1,2 @@
+pythonnet>=3.0.5
+clr-loader>=0.2.6

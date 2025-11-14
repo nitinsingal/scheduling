@@ -1,0 +1,104 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}\\bin\\Debug\\net8.0\\Scheduling.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "env": {
+                "DOTNET_ROOT": "C:\\Program Files\\dotnet"
+            }
+        },
+        {
+            "name": "Debug LocationTests.Create_WithValidName",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-tests",
+            "program": "C:\\Program Files\\dotnet\\dotnet.exe",
+            "args": [
+                "test",
+                "${workspaceFolder}\\Scheduling.Tests\\Scheduling.Tests.csproj",
+                "--filter",
+                "FullyQualifiedName=Scheduling.Tests.LocationTests.Create_WithValidName_ShouldCreateLocation",
+                "--configuration",
+                "Debug",
+                "--no-build"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "env": {
+                "DOTNET_ROOT": "C:\\Program Files\\dotnet",
+                "DOTNET_MULTILEVEL_LOOKUP": "0"
+            }
+        },
+        {
+            "name": "Debug All LocationTests",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-tests",
+            "program": "C:\\Program Files\\dotnet\\dotnet.exe",
+            "args": [
+                "test",
+                "${workspaceFolder}\\Scheduling.Tests\\Scheduling.Tests.csproj",
+                "--filter",
+                "FullyQualifiedName~LocationTests",
+                "--configuration",
+                "Debug",
+                "--no-build"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "env": {
+                "DOTNET_ROOT": "C:\\Program Files\\dotnet",
+                "DOTNET_MULTILEVEL_LOOKUP": "0"
+            }
+        },
+        {
+            "name": "Debug UnitTest1.Test1",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-tests",
+            "program": "C:\\Program Files\\dotnet\\dotnet.exe",
+            "args": [
+                "test",
+                "${workspaceFolder}\\Scheduling.Tests\\Scheduling.Tests.csproj",
+                "--filter",
+                "FullyQualifiedName=Scheduling.Tests.UnitTest1.Test1",
+                "--configuration",
+                "Debug",
+                "--no-build"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "env": {
+                "DOTNET_ROOT": "C:\\Program Files\\dotnet",
+                "DOTNET_MULTILEVEL_LOOKUP": "0"
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        },
+        {
+            "name": "Python Debug",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
+            }
+        }
+
+    ],
+    "compounds": []
+}

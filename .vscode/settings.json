@@ -1,0 +1,27 @@
+{
+    "dotnet.defaultSolution": "Scheduling.sln",
+    "omnisharp.enableRoslynAnalyzers": true,
+    "omnisharp.enableEditorConfigSupport": true,
+    "[csharp]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "files.exclude": {
+        "**/bin": true,
+        "**/obj": true
+    },
+    "dotnet.formatting.organizeImportsOnFormat": true,
+    "omnisharp.dotnetPath": "C:\\Program Files\\dotnet\\dotnet.exe",
+    "dotnet.test.configuration": "Debug",
+    "csharp.debug.justMyCode": false,
+    "csharp.debug.symbolOptions": {
+        "searchPaths": [],
+        "searchMicrosoftSymbolServer": false,
+        "searchNuGetOrgSymbolServer": false
+    },
+    "csharp.debug.suppressJITOptimizations": true,
+    "csharp.debug.enableStepFiltering": false
+}
+
